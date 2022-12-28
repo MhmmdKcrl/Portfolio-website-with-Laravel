@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Header Start */
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.activeHeader {
+    background-color: rgb(4, 9, 30, 1);
+    transition: .5s ease;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.headerLeft .headerLogo {
+    width: 150px;
+    height: auto;
+}
+
+.headerLeft .headerLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.headerRight .mainUl .childLi {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.headerRight .mainUl .childLi a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.headerRight .mainUl .childLi::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background: #008F7A;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.headerRight .mainUl .childLi:hover::after {
+    width: 100%;
+}
+
+
+/* Header Start */
+
+
+/* Start start*/
+
+#start {
+    padding: 300px 0px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/img/background-home.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.startContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.startContainer .startTextBox .startHeader h1 {
+    font-size: 50px;
+    color: #FFF;
+}
+
+.startContainer .startTextBox .startDesc p {
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+}
+
+
+/* Start End */
+
+
+/* Student Start */
+
+#student {
+    margin: 100px 0px;
+    display: flex;
+    min-height: 100vh;
+}
+
+.studentSlider .sliderBox {
+    z-index: 10;
+    border-radius: 10px;
+    padding: 50px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sliderBox .sliderImg {
+    overflow: hidden;
+    border: 3px solid #008F7A;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+}
+
+.sliderBox .sliderImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sliderBox .sliderUser {
+    margin-top: 20px;
+}
+
+.sliderBox .sliderUser h4 {
+    font-size: 20px;
+}
+
+.sliderBox .sliderText p {
+    font-size: 14px;
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Student End */
+
+
+/* Contact Start */
+
+#contact {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background: #FEFEDF;
+}
+
+.contactContainer {
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("/img/contact.bck.jpg") ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+
+.contactContainer .contactHeader {
+    text-align: center;
+}
+
+.contactContainer .contactHeader h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons div {
+    margin: 0 20px;
+}
+
+.icons .contactInsta a {
+    padding: 5px 12px;
+    border-radius: 50%;
+}
+
+.icons .contactFb a {
+    padding: 5px 15px;
+    border-radius: 50%;
+}
+
+.icons .contactLn a {
+    padding: 5px 12px;
+    border-radius: 50%;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #FFF;
+    border: 2px solid transparent;
+    background: #008F7A;
+    transition: all 0.3s ease;
+    font-size: 25px;
+}
+
+.icons a:hover {
+    color: #008F7A;
+    background-color: #FFF;
+    border-color: #008F7A;
+}
+
+
+/* Contact End */
+
+
+/* Footer Start */
+
+#footer {
+    background-color: rgb(4, 9, 30, 1);
+}
+
+.footerContainer {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footerLeft .footerLogo {
+    width: 150px;
+    height: auto;
+}
+
+.footerLeft .footerLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footerMiddle {
+    width: 40%;
+}
+
+.footerMiddle .footerDesc {
+    margin: auto;
+    overflow-wrap: break-word;
+}
+
+.footerMiddle .footerDesc p {
+    color: #fff;
+}
+
+.footerRight .footerMedia .fIco a {
+    color: #fff;
+    font-size: 20px;
+    transition: .5s ease;
+}
+
+.footerRight .footerMedia .fIco a:hover {
+    color: #008F7A;
+    font-size: 20px;
+}
